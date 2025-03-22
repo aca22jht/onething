@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,8 @@ public class PuzzleController : MonoBehaviour
     [SerializeField] private InputField input;
     [SerializeField] private GameObject puzzleUI;
     [SerializeField] private GameObject afterPuzzleUI;
-    private bool correctAnswer = false;
+    [SerializeField] private TMP_Text closingText;
+    public bool levelComplete = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,7 +22,7 @@ public class PuzzleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(levelComplete);
     }
 
     private void OnDestroy()
@@ -35,7 +37,12 @@ public class PuzzleController : MonoBehaviour
         puzzleUI.SetActive(false);
         afterPuzzleUI.SetActive(true);
         if (input.text == "111") {
-            correctAnswer = true;
+            closingText.SetText("Well Done! You have unlocked the key to move into the next stage!");
+            levelComplete = true;
+        }
+        else
+        {
+            closingText.SetText("Hmmm! That's not right!");
         }
        
     }
