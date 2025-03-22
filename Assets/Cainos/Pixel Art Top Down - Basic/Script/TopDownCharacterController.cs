@@ -10,9 +10,12 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private Animator animator;
 
+        public bool levelComplete;
+
         private void Start()
         {
             animator = GetComponent<Animator>();
+            levelComplete = false;
         }
 
 
