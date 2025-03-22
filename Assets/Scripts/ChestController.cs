@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class ChestController : MonoBehaviour
 {
-    [SerializeField] private GameObject box;
+    [SerializeField] private GameObject puzzleBox;
+    [SerializeField] private GameObject afterPuzzleUI;
 
     private void Start()
     {
-        box.SetActive(false);
+        puzzleBox.SetActive(false);
+        afterPuzzleUI.SetActive(false);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("collision");
-        box.SetActive(true);
+        puzzleBox.SetActive(true);
     }
 }

@@ -3,14 +3,18 @@ using UnityEngine.UI;
 
 public class PuzzleController : MonoBehaviour
 {
-    public Button button;
-    [SerializeField] private GameObject input;
-    [SerializeField] private GameObject box;
+    public Button submitButton;
+    public Button closeButton;
+    [SerializeField] private InputField input;
+    [SerializeField] private GameObject puzzleUI;
+    [SerializeField] private GameObject afterPuzzleUI;
+    private bool correctAnswer = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        button.onClick.AddListener(submitClicked);
+        submitButton.onClick.AddListener(submitClicked);
+        closeButton.onClick.AddListener(closeDialogue);
     }
 
     // Update is called once per frame
@@ -21,15 +25,25 @@ public class PuzzleController : MonoBehaviour
 
     private void OnDestroy()
     {
-        button.onClick.RemoveListener(submitClicked);
+        submitButton.onClick.RemoveListener(submitClicked);
+        closeButton.onClick.RemoveListener(closeDialogue);
     }
 
     public void submitClicked()
     {
         Debug.Log("hide");
-        box.SetActive(false);
-        if (input.GetComponent<InputField>().text == "111") {
-            Debug.Log("correct");
+        puzzleUI.SetActive(false);
+        afterPuzzleUI.SetActive(true);
+        if (input.text == "111") {
+            correctAnswer = true;
         }
+       
+    }
+
+    public void closeDialogue()
+    {
+        Debug.Log("hide.pt2");
+        afterPuzzleUI.SetActive(false);
+
     }
 }
