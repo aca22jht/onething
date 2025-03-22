@@ -1198,6 +1198,8 @@ MonoBehaviour:
   input: {fileID: 245611656}
   puzzleUI: {fileID: 199280814}
   afterPuzzleUI: {fileID: 2091659083}
+  closingText: {fileID: 1248983387}
+  levelComplete: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,7 +4432,7 @@ GameObject:
   - component: {fileID: 1248983388}
   - component: {fileID: 1248983387}
   m_Layer: 0
-  m_Name: PuzzleText
+  m_Name: AfterText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4947,6 +4949,8 @@ MonoBehaviour:
   input: {fileID: 245611656}
   puzzleUI: {fileID: 199280814}
   afterPuzzleUI: {fileID: 2091659083}
+  closingText: {fileID: 1248983387}
+  levelComplete: 0
 --- !u!114 &1565806539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5226,6 +5230,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903119, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: puzzle
+      value: 
+      objectReference: {fileID: 590696978}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
