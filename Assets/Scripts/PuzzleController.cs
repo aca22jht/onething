@@ -24,7 +24,7 @@ public class PuzzleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(levelComplete);
+
     }
 
     private void OnDestroy()
