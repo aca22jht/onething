@@ -1,4 +1,3 @@
-using Cainos.PixelArtTopDown_Basic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +11,6 @@ public class PuzzleController : MonoBehaviour
     [SerializeField] private GameObject afterPuzzleUI;
     [SerializeField] private TMP_Text closingText;
     public bool levelComplete = false;
-    public TopDownCharacterController characterController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,12 +39,13 @@ public class PuzzleController : MonoBehaviour
         if (input.text == "111") {
             closingText.SetText("Well Done! You have unlocked the key to move into the next stage!");
             levelComplete = true;
+
         }
+
         else
         {
             closingText.SetText("Hmmm! That's not right!");
         }
-        characterController.levelComplete = levelComplete;
        
     }
 
