@@ -32,15 +32,18 @@ public class MenuController : MonoBehaviour
     public void playClicked()
     {
         Debug.Log("play");
+        SceneManager.LoadScene("Level1");
     }
 
     public void controlsClicked()
     {
         Debug.Log("controls");
+        SceneManager.LoadScene("Controls");
     }
 
     public void howToClicked()
     {
         Debug.Log("how to");
+        SceneManager.LoadScene("How To Play");
     }
 }

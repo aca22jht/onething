@@ -11,5 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cainos/Scenes/Level2.unity
     guid: 5894f77778242fb44ab9af87adf03fd1
+  - enabled: 1
+    path: Assets/Cainos/Scenes/Main Menu.unity
+    guid: b34d11f96dd92574688f0021043eac33
+  - enabled: 1
+    path: Assets/Cainos/Scenes/Controls.unity
+    guid: ce08c3a757c53384ba8b22cbbeb3d65c
+  - enabled: 1
+    path: Assets/Cainos/Scenes/How To Play.unity
+    guid: b2337299d8b2cb6488d8ef54d1bec55e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
