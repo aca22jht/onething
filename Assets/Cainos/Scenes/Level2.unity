@@ -454,6 +454,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903119, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: PuzzleController
+      value: 
+      objectReference: {fileID: 2001257198}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -487,7 +492,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &531894743
 RectTransform:
@@ -724,7 +729,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &606207331
 RectTransform:
@@ -868,7 +873,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &769841540
 SpriteRenderer:
@@ -934,7 +939,7 @@ Transform:
   m_GameObject: {fileID: 769841539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -585.8, y: -244.6, z: 0}
+  m_LocalPosition: {x: -493.5, y: -277.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1047,7 +1052,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &833381739
 Transform:
@@ -1085,6 +1090,7 @@ MonoBehaviour:
   closingText: {fileID: 1029304069}
   puzzleText: {fileID: 1884116597}
   levelComplete: 0
+  activePuzzle: 0
   characterController: {fileID: 350995097}
 --- !u!114 &833381741
 MonoBehaviour:
@@ -1214,7 +1220,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &980407641
 MonoBehaviour:
@@ -3506,7 +3512,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1029304068
 RectTransform:
@@ -3551,8 +3557,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d4e908499ef41324b8d5b2ea5b277616, type: 2}
-  m_sharedMaterial: {fileID: 4297493829970809586, guid: d4e908499ef41324b8d5b2ea5b277616,
+  m_fontAsset: {fileID: 11400000, guid: 2d287c4d78cc2194e8f0676c7e19afe5, type: 2}
+  m_sharedMaterial: {fileID: -4440951173692487416, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4422,7 +4428,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1221415043
 RectTransform:
@@ -4615,7 +4621,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1222998324
 RectTransform:
@@ -4860,7 +4866,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1329520857
 RectTransform:
@@ -4935,6 +4941,8 @@ GameObject:
   - component: {fileID: 1363960540}
   - component: {fileID: 1363960539}
   - component: {fileID: 1363960541}
+  - component: {fileID: 1363960543}
+  - component: {fileID: 1363960542}
   m_Layer: 0
   m_Name: FDoor2
   m_TagString: Untagged
@@ -5127,6 +5135,46 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3468456, y: 1.5835752}
   m_EdgeRadius: 0
+--- !u!50 &1363960542
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363960537}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1363960543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363960537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abec785a086a96438e6bee853f97c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 350995097}
 --- !u!1 &1387592415
 GameObject:
   m_ObjectHideFlags: 0
@@ -5301,7 +5349,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1417680659
 MonoBehaviour:
@@ -5684,7 +5732,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1782787800
 Transform:
@@ -5695,7 +5743,7 @@ Transform:
   m_GameObject: {fileID: 1782787799}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -585.8, y: -244.6, z: 0}
+  m_LocalPosition: {x: -493.4, y: -278, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5772,7 +5820,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1884116596
 RectTransform:
@@ -5824,7 +5872,7 @@ MonoBehaviour:
     llllllll1llll'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d287c4d78cc2194e8f0676c7e19afe5, type: 2}
-  m_sharedMaterial: {fileID: 3043098562913687704, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
+  m_sharedMaterial: {fileID: -4440951173692487416, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6075,7 +6123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2001257197
 Transform:
@@ -6113,6 +6161,7 @@ MonoBehaviour:
   closingText: {fileID: 1029304069}
   puzzleText: {fileID: 1884116597}
   levelComplete: 0
+  activePuzzle: 0
   characterController: {fileID: 350995097}
 --- !u!114 &2001257199
 MonoBehaviour:
