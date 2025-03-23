@@ -266,9 +266,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Submit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f79b5da9bd667b4e94dcdf4283bc466, type: 2}
-  m_sharedMaterial: {fileID: 1513881823298845431, guid: 7f79b5da9bd667b4e94dcdf4283bc466,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2053,7 +2052,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.96875, y: 1.75, z: 0}
   m_MaxChunkCount: 16
@@ -4422,7 +4421,7 @@ MonoBehaviour:
     llllllll1llll'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d287c4d78cc2194e8f0676c7e19afe5, type: 2}
-  m_sharedMaterial: {fileID: 3043098562913687704, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
+  m_sharedMaterial: {fileID: 7023735715989583202, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4560,9 +4559,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d4e908499ef41324b8d5b2ea5b277616, type: 2}
-  m_sharedMaterial: {fileID: 4297493829970809586, guid: d4e908499ef41324b8d5b2ea5b277616,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4717,7 +4715,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.078125, y: 2.5, z: 0}
   m_MaxChunkCount: 16
@@ -4984,7 +4982,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
-  m_SortingOrder: 25
+  m_SortingOrder: 4
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.078125, y: 1.78125, z: 0}
   m_MaxChunkCount: 16
@@ -6509,9 +6507,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f79b5da9bd667b4e94dcdf4283bc466, type: 2}
-  m_sharedMaterial: {fileID: 1513881823298845431, guid: 7f79b5da9bd667b4e94dcdf4283bc466,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
