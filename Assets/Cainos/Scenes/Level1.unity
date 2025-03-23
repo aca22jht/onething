@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 168938625}
   - component: {fileID: 168938624}
   - component: {fileID: 168938626}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: SubmitText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,14 +234,14 @@ RectTransform:
   m_GameObject: {fileID: 168938622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.023052098, y: 0.023052098, z: 0.023052098}
+  m_LocalScale: {x: 0.023052095, y: 0.023052095, z: 0.023052095}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 590696979}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.062, y: 0.0964}
+  m_AnchoredPosition: {x: 0.06198883, y: 0.09642029}
   m_SizeDelta: {x: 110.3707, y: 36.6993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168938624
@@ -385,9 +385,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -44025399
-  m_SortingLayer: 2
-  m_SortingOrder: 10
+  m_SortingLayerID: -105541197
+  m_SortingLayer: 3
+  m_SortingOrder: 90
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -569,7 +569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &199280815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4420,8 +4420,8 @@ MonoBehaviour:
 
     llllllll1llll'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d4e908499ef41324b8d5b2ea5b277616, type: 2}
-  m_sharedMaterial: {fileID: 4297493829970809586, guid: d4e908499ef41324b8d5b2ea5b277616,
+  m_fontAsset: {fileID: 11400000, guid: 2d287c4d78cc2194e8f0676c7e19afe5, type: 2}
+  m_sharedMaterial: {fileID: 3043098562913687704, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4487,7 +4487,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1226981546

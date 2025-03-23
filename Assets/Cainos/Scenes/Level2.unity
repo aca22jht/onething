@@ -5823,8 +5823,8 @@ MonoBehaviour:
 
     llllllll1llll'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d4e908499ef41324b8d5b2ea5b277616, type: 2}
-  m_sharedMaterial: {fileID: 4297493829970809586, guid: d4e908499ef41324b8d5b2ea5b277616,
+  m_fontAsset: {fileID: 11400000, guid: 2d287c4d78cc2194e8f0676c7e19afe5, type: 2}
+  m_sharedMaterial: {fileID: 3043098562913687704, guid: 2d287c4d78cc2194e8f0676c7e19afe5,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

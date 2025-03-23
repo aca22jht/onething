@@ -18,7 +18,7 @@ public class PuzzleController : MonoBehaviour
     string currentPuzzle;
     string currentAnswer;
     public TopDownCharacterController characterController;
-    string[,] puzzleQuestionsAndAnswers = { { "   1      1   \r\n  11     11   \r\n   1      1   \r\n   1      1   \r\n 11111  11111 ", "11"},
+    string[,] puzzleQuestionsAndAnswers = { { "  1      1   \r\n 11     11   \r\n  1      1   \r\n  1      1   \r\n  11111  11111", "11"},
                                             { ".11111..11111.\r\n.1......1...1.\r\n.11111..11111.\r\n.....1..1...1.\r\n.11111..11111.", "58"}};
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
