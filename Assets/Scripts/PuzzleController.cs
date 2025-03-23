@@ -79,7 +79,7 @@ public class PuzzleController : MonoBehaviour
         if (input.text == currentAnswer) {
             if (currentLevel == 5)
             {
-                closingText.SetText("Well Done! You have made it through the game! However, there is still one question we must ask you. What is the number?");
+                SceneManager.LoadScene("Main Menu");
             }
             else
             {
