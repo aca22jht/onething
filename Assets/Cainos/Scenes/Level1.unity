@@ -1262,6 +1262,7 @@ MonoBehaviour:
   closingText: {fileID: 1248983387}
   puzzleText: {fileID: 1226981545}
   levelComplete: 0
+  activePuzzle: 0
   characterController: {fileID: 678897163}
 --- !u!1 &619394800
 GameObject:
@@ -4487,7 +4488,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1226981546
@@ -5119,6 +5120,7 @@ MonoBehaviour:
   closingText: {fileID: 1248983387}
   puzzleText: {fileID: 1226981545}
   levelComplete: 0
+  activePuzzle: 0
   characterController: {fileID: 678897163}
 --- !u!114 &1565806539
 MonoBehaviour:
@@ -5404,6 +5406,11 @@ PrefabInstance:
       propertyPath: puzzle
       value: 
       objectReference: {fileID: 590696978}
+    - target: {fileID: 5628018141983903119, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: PuzzleController
+      value: 
+      objectReference: {fileID: 590696982}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

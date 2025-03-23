@@ -12,6 +12,8 @@ namespace Cainos.PixelArtTopDown_Basic
 
         public bool levelComplete;
 
+        public PuzzleController PuzzleController;
+
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -21,34 +23,39 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void Update()
         {
-            Vector2 dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.A))
+            if (PuzzleController.activePuzzle == false)
             {
-                dir.x = -1;
-                animator.SetInteger("Direction", 3);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                dir.x = 1;
-                animator.SetInteger("Direction", 2);
-            }
+                Vector2 dir = Vector2.zero;
+                if (Input.GetKey(KeyCode.A))
+                {
+                    dir.x = -1;
+                    animator.SetInteger("Direction", 3);
+                }
+                else if (Input.GetKey(KeyCode.D))
+                {
+                    dir.x = 1;
+                    animator.SetInteger("Direction", 2);
+                }
 
-            if (Input.GetKey(KeyCode.W))
-            {
-                dir.y = 1;
-                animator.SetInteger("Direction", 1);
+                if (Input.GetKey(KeyCode.W))
+                {
+                    dir.y = 1;
+                    animator.SetInteger("Direction", 1);
+                }
+                else if (Input.GetKey(KeyCode.S))
+                {
+                    dir.y = -1;
+                    animator.SetInteger("Direction", 0);
+                }
+
+                dir.Normalize();
+                animator.SetBool("IsMoving", dir.magnitude > 0);
+
+                GetComponent<Rigidbody2D>().linearVelocity = speed * dir;
             }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                dir.y = -1;
-                animator.SetInteger("Direction", 0);
-            }
+            
 
-            dir.Normalize();
-            animator.SetBool("IsMoving", dir.magnitude > 0);
-
-            GetComponent<Rigidbody2D>().linearVelocity = speed * dir;
-
+            Debug.Log(PuzzleController.activePuzzle);
         }
     }
 }

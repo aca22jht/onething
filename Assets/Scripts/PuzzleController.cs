@@ -14,6 +14,7 @@ public class PuzzleController : MonoBehaviour
     [SerializeField] private TMP_Text closingText;
     [SerializeField] private TMP_Text puzzleText;
     public bool levelComplete = false;
+    public bool activePuzzle;
     int currentLevel;
     string currentPuzzle;
     string currentAnswer;
@@ -43,6 +44,7 @@ public class PuzzleController : MonoBehaviour
         currentPuzzle = puzzleQuestionsAndAnswers[currentLevel-1, 0];
         currentAnswer = puzzleQuestionsAndAnswers[currentLevel - 1, 1];
         puzzleText.SetText(currentPuzzle);
+        activePuzzle = true;
     }
 
     // Update is called once per frame
@@ -55,6 +57,7 @@ public class PuzzleController : MonoBehaviour
     {
         submitButton.onClick.RemoveListener(submitClicked);
         closeButton.onClick.RemoveListener(closeDialogue);
+        activePuzzle = false;
     }
 
     public void submitClicked()
@@ -72,6 +75,7 @@ public class PuzzleController : MonoBehaviour
             closingText.SetText("Hmmm! That's not right!");
         }
         characterController.levelComplete = levelComplete;
+        activePuzzle = false;
     }
 
     public void closeDialogue()
