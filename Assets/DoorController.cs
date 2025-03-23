@@ -27,9 +27,9 @@ public class DoorController : MonoBehaviour
             {
                 SceneManager.LoadScene("Level3"); // go through level 1 door to level 2
             }
-            else if (sceneN == "Level2")
+            else if (sceneN == "Level3")
             {
-                SceneManager.LoadScene("Level3"); // go through level 1 door to level 2
+                SceneManager.LoadScene("Level4"); // go through level 1 door to level 2
             }
         }        
     }

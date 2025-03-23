@@ -55,7 +55,7 @@ namespace Cainos.PixelArtTopDown_Basic
             }
             
 
-            Debug.Log(PuzzleController.activePuzzle);
+            //Debug.Log(PuzzleController.activePuzzle);
         }
     }
 }
