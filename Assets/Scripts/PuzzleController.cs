@@ -20,7 +20,10 @@ public class PuzzleController : MonoBehaviour
     string currentAnswer;
     public TopDownCharacterController characterController;
     string[,] puzzleQuestionsAndAnswers = { { "  1      1   \r\n 11     11   \r\n  1      1   \r\n  1      1   \r\n  11111  11111", "11"},
-                                            { ".11111..11111.\r\n.1......1...1.\r\n.11111..11111.\r\n.....1..1...1.\r\n.11111..11111.", "58"}};
+                                            { ".11111..11111.\r\n.1......1...1.\r\n.11111..11111.\r\n.....1..1...1.\r\n.11111..11111.", "58"},
+                                            { "01111100111110\r\n00000100100010\r\n01111100100010\r\n00000100100010\r\n01111100111110" , "30"},
+                                            { "J11111JJ11111J\r\nJ1JJJ1JJJJJJ1J\r\nJ11111JJ11111J\r\nJJJJJ1JJ1JJJJJ\r\nJ11111JJ11111J", "92" },
+                                            { "l1lll1ll11111l\r\nl1lll1llllll1l\r\nl11111lllll1ll\r\nlllll1llll1lll\r\nlllll1lll1llll", "47"} };
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,10 +40,10 @@ public class PuzzleController : MonoBehaviour
         {
             currentLevel = 2; // go through level 1 door to level 2
         }
-        //else if (sceneN == "Level3")
-        //{
-        //    currentLevel = 3; // go through level 1 door to level 2
-        //}
+        else if (sceneN == "Level3")
+        {
+            currentLevel = 3; // go through level 1 door to level 2
+        }
         currentPuzzle = puzzleQuestionsAndAnswers[currentLevel-1, 0];
         currentAnswer = puzzleQuestionsAndAnswers[currentLevel - 1, 1];
         puzzleText.SetText(currentPuzzle);
