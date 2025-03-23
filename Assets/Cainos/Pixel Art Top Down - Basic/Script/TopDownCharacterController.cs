@@ -16,8 +16,10 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void Start()
         {
+            Debug.Log("test");
             animator = GetComponent<Animator>();
             levelComplete = false;
+            PuzzleController.activePuzzle = false;
         }
 
 
@@ -55,7 +57,7 @@ namespace Cainos.PixelArtTopDown_Basic
             }
             
 
-            //Debug.Log(PuzzleController.activePuzzle);
+            Debug.Log(PuzzleController.activePuzzle);
         }
     }
 }
