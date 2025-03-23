@@ -569,7 +569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &199280815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,6 +1260,7 @@ MonoBehaviour:
   puzzleUI: {fileID: 199280814}
   afterPuzzleUI: {fileID: 2091659083}
   closingText: {fileID: 1248983387}
+  puzzleText: {fileID: 1226981545}
   levelComplete: 0
   characterController: {fileID: 678897163}
 --- !u!1 &619394800
@@ -5116,6 +5117,7 @@ MonoBehaviour:
   puzzleUI: {fileID: 199280814}
   afterPuzzleUI: {fileID: 2091659083}
   closingText: {fileID: 1248983387}
+  puzzleText: {fileID: 1226981545}
   levelComplete: 0
   characterController: {fileID: 678897163}
 --- !u!114 &1565806539
@@ -6596,7 +6598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2091659084
 MonoBehaviour:
   m_ObjectHideFlags: 0
