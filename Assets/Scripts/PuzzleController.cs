@@ -44,6 +44,14 @@ public class PuzzleController : MonoBehaviour
         {
             currentLevel = 3; // go through level 1 door to level 2
         }
+        else if (sceneN == "Level4")
+        {
+            currentLevel = 4; // go through level 1 door to level 2
+        }
+        else if (sceneN == "Level5")
+        {
+            currentLevel = 5; // go through level 1 door to level 2
+        }
         currentPuzzle = puzzleQuestionsAndAnswers[currentLevel-1, 0];
         currentAnswer = puzzleQuestionsAndAnswers[currentLevel - 1, 1];
         puzzleText.SetText(currentPuzzle);
