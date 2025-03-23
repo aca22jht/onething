@@ -27,7 +27,7 @@ public class ChestController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(characterController.levelComplete);
+        //Debug.Log(characterController.levelComplete);
         if (characterController.levelComplete == false) {
             puzzleBox.SetActive(true);
         }
