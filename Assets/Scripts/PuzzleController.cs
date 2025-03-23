@@ -77,8 +77,16 @@ public class PuzzleController : MonoBehaviour
         puzzleUI.SetActive(false);
         afterPuzzleUI.SetActive(true);
         if (input.text == currentAnswer) {
-            closingText.SetText("Well Done! You have unlocked the key to move into the next stage!");
-            levelComplete = true;
+            if (currentLevel == 5)
+            {
+                closingText.SetText("Well Done! You have made it through the game! However, there is still one question we must ask you. What is the number?");
+            }
+            else
+            {
+                closingText.SetText("Well Done! You have unlocked the key to move into the next stage!");
+                levelComplete = true;
+            }
+            
         }
 
         else
@@ -92,7 +100,16 @@ public class PuzzleController : MonoBehaviour
     public void closeDialogue()
     {
         Debug.Log("hide.pt2");
-        afterPuzzleUI.SetActive(false);
+        if (currentLevel != 5)
+        {
+            Debug.Log("hide.pt2");
+            afterPuzzleUI.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("move to end screen");
+        }
+            
 
     }
 }
