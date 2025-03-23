@@ -8,6 +8,7 @@ public class MenuController : MonoBehaviour
     public Button playButton;
     public Button controlsButton;
     public Button howToButton;
+    public Button oneWorldButton;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +16,7 @@ public class MenuController : MonoBehaviour
         playButton.onClick.AddListener(playClicked);
         controlsButton.onClick.AddListener(controlsClicked);
         howToButton.onClick.AddListener(howToClicked);
+        oneWorldButton.onClick.AddListener(oneWorldClicked);
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class MenuController : MonoBehaviour
         playButton.onClick.RemoveListener(playClicked);
         controlsButton.onClick.RemoveListener(controlsClicked);
         howToButton.onClick.RemoveListener(howToClicked);
+        oneWorldButton.onClick.RemoveListener(oneWorldClicked);
     }
 
     public void playClicked()
@@ -45,5 +48,11 @@ public class MenuController : MonoBehaviour
     {
         Debug.Log("how to");
         SceneManager.LoadScene("How To Play");
+    }
+
+    public void oneWorldClicked()
+    {
+        Debug.Log("one world");
+        SceneManager.LoadScene("One World");
     }
 }
