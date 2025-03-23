@@ -15,7 +15,7 @@ public class DoorController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     { // 3 levels in total
         string sceneN = SceneManager.GetActiveScene().name;
-        Debug.Log(characterController.levelComplete);
+        //Debug.Log(characterController.levelComplete);
 
         if (characterController.levelComplete)
         {
