@@ -79,7 +79,7 @@ public class PuzzleController : MonoBehaviour
         if (input.text == currentAnswer) {
             if (currentLevel == 5)
             {
-                SceneManager.LoadScene("Main Menu");
+                SceneManager.LoadScene("Game Over");
             }
             else
             {

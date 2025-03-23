@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cainos/Scenes/Level5.unity
     guid: bd774b0414e47664e9231da9710ff1e0
+  - enabled: 1
+    path: Assets/Cainos/Scenes/Game Over.unity
+    guid: 797d015f398aad84b8e302c0fa5ab7e5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
